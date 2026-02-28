@@ -10,58 +10,58 @@ const Projects = () => {
   const projects = [
     {
       title: 'addovedi',
-      description: 'A comprehensive web application built with TypeScript, forked from coding-pundit-nitap. Features modern architecture and scalable design patterns.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop',
-      tags: ['TypeScript', 'React', 'Node.js'],
+      description: 'A comprehensive web application built with TypeScript, forked from coding-pundit-nitap. Tech fest management platform with modern architecture and scalable design patterns.',
+      image: 'https://images.unsplash.com/photo-1540575467063-178a5072b5b1?w=800&auto=format&fit=crop',
+      tags: ['TypeScript', 'React', 'Node.js', 'Web Development'],
       demoUrl: '#',
       githubUrl: 'https://github.com/Salmonnaik/addovedi',
       gradient: 'from-blue-500 to-purple-500',
     },
     {
       title: 'nxt-trendz-product-details',
-      description: 'E-commerce product details page implementation with JavaScript. Focuses on dynamic product display and user interaction patterns.',
-      image: 'https://images.unsplash.com/photo-1661956602116-aa6865609028?w=800&auto=format&fit=crop',
-      tags: ['JavaScript', 'React', 'E-commerce'],
+      description: 'E-commerce product details page with dynamic product display and user interactions.',
+      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&auto=format&fit=crop',
+      tags: ['JavaScript', 'React', 'E-commerce', 'Frontend'],
       demoUrl: '#',
       githubUrl: 'https://github.com/Salmonnaik/nxt-trendz-product-details',
       gradient: 'from-green-500 to-teal-500',
     },
     {
       title: 'registration-form',
-      description: 'Interactive registration form built with JavaScript, featuring form validation, error handling, and responsive design.',
-      image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&auto=format&fit=crop',
-      tags: ['JavaScript', 'Forms', 'Validation'],
+      description: 'Normal registration form built with JavaScript, featuring form validation and responsive design for user sign-up.',
+      image: 'https://images.unsplash.com/photo-1516035118214-a1c29b0425c5?w=800&auto=format&fit=crop',
+      tags: ['JavaScript', 'HTML', 'CSS', 'Forms'],
       demoUrl: '#',
       githubUrl: 'https://github.com/Salmonnaik/registration-form',
       gradient: 'from-orange-500 to-red-500',
     },
     {
       title: 'TNP-MAIN-PRODUCTION',
-      description: 'Production-ready application built with TypeScript. Implements robust architecture and enterprise-level features.',
-      image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&auto=format&fit=crop',
-      tags: ['TypeScript', 'Production', 'Enterprise'],
+      description: 'Production-ready college website for NIT Arunachal Pradesh, built with TypeScript for training and placement management, featuring the official institute logo.',
+      image: 'https://i.imgur.com/NITAP_logo.png', // Replace with actual NIT Arunachal Pradesh logo URL
+      tags: ['TypeScript', 'Node.js', 'Production', 'Backend', 'NIT Arunachal Pradesh'],
       demoUrl: '#',
       githubUrl: 'https://github.com/Salmonnaik/TNP-MAIN-PRODUCTION',
       gradient: 'from-pink-500 to-rose-500',
     },
     {
       title: 'nxtwatch-app',
-      description: 'Video streaming application inspired by popular platforms. Built with JavaScript focusing on modern UI/UX patterns.',
-      image: 'https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&auto=format&fit=crop',
-      tags: ['JavaScript', 'Video', 'Streaming'],
+      description: 'Video streaming application similar to VidMate, built with JavaScript focusing on modern UI/UX patterns for video content management.',
+      image: 'https://images.unsplash.com/photo-1574375927939-d8a98e89de5e?w=800&auto=format&fit=crop',
+      tags: ['JavaScript', 'React', 'Video', 'Streaming'],
       demoUrl: '#',
       githubUrl: 'https://github.com/Salmonnaik/nxtwatch-app',
       gradient: 'from-cyan-500 to-blue-500',
     },
     {
-      title: 'Analytics Dashboard',
-      description: 'A comprehensive analytics dashboard with data visualization, real-time metrics, and customizable reports for business intelligence.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop',
-      tags: ['React', 'D3.js', 'Node.js', 'MongoDB'],
+      title: 'Portfolio Website',
+      description: 'Personal portfolio website with modern design and responsive layout built with React.',
+      image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&auto=format&fit=crop',
+      tags: ['React', 'CSS', 'Portfolio', 'Frontend'],
       demoUrl: '#',
-      githubUrl: 'https://github.com/Salmonnaik',
+      githubUrl: 'https://github.com/Salmonnaik/Portfolio',
       gradient: 'from-indigo-500 to-purple-500',
-    },
+    }
   ];
 
   const allTags = ['All', ...new Set(projects.flatMap(p => p.tags))];
@@ -195,7 +195,7 @@ const ProjectCard = ({ project, index }) => {
   return (
     <motion.div
       id={`project-${index}`}
-      className="project-card glass rounded-2xl overflow-hidden group cursor-pointer"
+      className="project-card glass rounded-2xl overflow-hidden group cursor-pointer relative"
       variants={{
         hidden: { opacity: 0, y: 50 },
         visible: {
@@ -253,7 +253,7 @@ const ProjectCard = ({ project, index }) => {
       </div>
 
       {/* Content */}
-      <div className="p-6">
+      <div className="relative p-6 z-10">
         <h3 className="font-display font-bold text-xl mb-3 text-text">
           {project.title}
         </h3>
@@ -266,7 +266,7 @@ const ProjectCard = ({ project, index }) => {
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="px-3 py-1 bg-bg-tertiary text-text-secondary text-xs font-medium rounded-full"
+              className="px-3 py-1 bg-bg-tertiary/80 text-text-secondary text-xs font-medium rounded-full backdrop-blur-sm"
             >
               {tag}
             </span>
