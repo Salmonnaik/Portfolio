@@ -1,0 +1,20 @@
+This file contains all component code. Extract each component to its respective file.
+
+=== Navbar.jsx ===
+[Component code will be created separately]
+
+=== Hero.jsx ===
+[Component code will be created separately]
+
+=== Skills.jsx ===
+[Component code will be created separately]
+
+=== Projects.jsx ===
+[Component code will be created separately]
+
+=== Contact.jsx ===
+[Component code will be created separately]
+
+=== Footer.jsx ===
+[Component code will be created separately]
+
