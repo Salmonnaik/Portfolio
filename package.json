@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run postinstall && vite build",
-    "postinstall": "chmod +x node_modules/.bin/* || true",
-    "preview": "vite preview"
+    "build": "vite build",
+    "preview": "vite preview",
+    "vercel-build": "npm install && npm run build"
   },
   "dependencies": {
     "react": "^18.2.0",
