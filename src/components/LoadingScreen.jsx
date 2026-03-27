@@ -33,7 +33,7 @@ const LoadingScreen = ({ onLoadingComplete }) => {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          AP
+          SNB
         </motion.div>
         
         <div className="w-64 h-1 bg-bg-tertiary rounded-full overflow-hidden">

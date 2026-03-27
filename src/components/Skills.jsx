@@ -101,7 +101,7 @@ const Skills = () => {
               My Journey
             </motion.span>
             <h2 className="font-display font-bold text-4xl md:text-6xl mb-4">
-              Skills <span className="gradient-text">Roadmap</span>
+              Skills <span className="gradient-text"></span>
             </h2>
             <p className="text-text-secondary text-lg max-w-2xl mx-auto">
               A visual journey through my technical expertise and creative capabilities

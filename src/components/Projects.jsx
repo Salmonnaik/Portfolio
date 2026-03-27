@@ -38,7 +38,7 @@ const Projects = () => {
     {
       title: 'TNP-MAIN-PRODUCTION',
       description: 'Production-ready college website for NIT Arunachal Pradesh, built with TypeScript for training and placement management, featuring the official institute logo.',
-      image: 'https://i.imgur.com/NITAP_logo.png', // Replace with actual NIT Arunachal Pradesh logo URL
+      image: 'https://images.unsplash.com/photo-1562774053-701939374585?w=800&auto=format&fit=crop',
       tags: ['TypeScript', 'Node.js', 'Production', 'Backend', 'NIT Arunachal Pradesh'],
       demoUrl: '#',
       githubUrl: 'https://github.com/Salmonnaik/TNP-MAIN-PRODUCTION',
@@ -55,12 +55,30 @@ const Projects = () => {
     },
     {
       title: 'Portfolio Website',
-      description: 'Personal portfolio website with modern design and responsive layout built with React.',
+      description: 'Personal portfolio website with modern design, animations, project showcase, and responsive layout built with React and Tailwind CSS.',
       image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&auto=format&fit=crop',
       tags: ['React', 'CSS', 'Portfolio', 'Frontend'],
       demoUrl: '#',
       githubUrl: 'https://github.com/Salmonnaik/Portfolio',
       gradient: 'from-indigo-500 to-purple-500',
+    },
+    {
+      title: 'nxt-app-build-ai',
+      description: 'AI-powered application builder leveraging next-generation technologies for intelligent app development and automation.',
+      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&auto=format&fit=crop',
+      tags: ['Python', 'Machine Learning', 'AI', 'TensorFlow'],
+      demoUrl: '#',
+      githubUrl: 'https://github.com/Salmonnaik/nxt-app-build-ai',
+      gradient: 'from-violet-500 to-purple-600',
+    },
+    {
+      title: 'edureach-platform-full-stack',
+      description: 'Full-stack educational platform with digital collage creation tools, designed for interactive learning and creative expression.',
+      image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&auto=format&fit=crop',
+      tags: ['React', 'Node.js', 'Education', 'Web Development'],
+      demoUrl: '#',
+      githubUrl: 'https://github.com/Salmonnaik/edureach-platform-full-stack',
+      gradient: 'from-emerald-500 to-teal-600',
     }
   ];
 

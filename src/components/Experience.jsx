@@ -6,6 +6,13 @@ const Experience = () => {
 
   const experiences = [
     {
+      title: "Full Stack Developer Trainee",
+      company: "Nxtwave Disruptive Technologies",
+      description: "Completed comprehensive full stack development training program, gaining expertise in modern web technologies, frameworks, and industry best practices. Worked on real-world projects and collaborative development.",
+      period: "2023",
+      type: "mid"
+    },
+    {
       title: "Senior Full Stack Developer",
       description: "Leading development of scalable web applications using React, Node.js, and cloud technologies. Mentoring junior developers and implementing best practices.",
       period: "Current",
@@ -74,11 +81,20 @@ const Experience = () => {
               className={`relative p-8 rounded-2xl border-2 ${getTypeStyles(exp.type)}`}
             >
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                <h3 className={`text-2xl font-bold ${
-                  theme === 'dark' ? 'text-white' : 'text-gray-900'
-                }`}>
-                  {exp.title}
-                </h3>
+                <div>
+                  <h3 className={`text-2xl font-bold ${
+                    theme === 'dark' ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    {exp.title}
+                  </h3>
+                  {exp.company && (
+                    <p className={`text-lg font-medium ${
+                      theme === 'dark' ? 'text-blue-400' : 'text-blue-600'
+                    }`}>
+                      {exp.company}
+                    </p>
+                  )}
+                </div>
                 <span className={`mt-2 md:mt-0 px-4 py-2 rounded-full text-sm font-medium ${
                   theme === 'dark' ? 'bg-gray-800 text-gray-300' : 'bg-gray-200 text-gray-700'
                 }`}>

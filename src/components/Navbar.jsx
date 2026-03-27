@@ -79,7 +79,7 @@ const Navbar = ({ theme, toggleTheme }) => {
             whileTap={{ scale: 0.95 }}
             onClick={(e) => handleNavClick(e, '#home')}
           >
-            Salmon Naik Boda
+            SNB
           </motion.a>
 
           {/* Desktop Navigation */}

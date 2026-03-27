@@ -38,6 +38,15 @@ const Certifications = () => {
       description: "TypeScript programming for type-safe JavaScript development and large-scale applications.",
       credentialId: "TS-2023",
       credentialUrl: "https://www.linkedin.com/in/salmon-naik-boda"
+    },
+    {
+      id: 5,
+      title: "Nxtwave Full Stack Development",
+      issuer: "Nxtwave Disruptive Technologies",
+      date: "2023",
+      description: "Comprehensive full stack development program covering modern web technologies, frameworks, and industry best practices.",
+      credentialId: "NXTWAVE-FS-2023",
+      credentialUrl: "https://www.linkedin.com/in/salmon-naik-boda"
     }
   ];
 
